@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style>
+         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main {
+            position: relative;
+            top: 0;
+            height: 100vh;
+            z-index: 0;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        header {
+            position: absolute;
+            top: 5%;
+
+            /* 가로 가운데 */
+            left: 50%;
+            transform: translateX(-50%);
+
+            /* 최상위로 올리기 */
+            z-index: 999;
+        }
+
+        .hwrapper {
+            width: 1600px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .jua-regular {
+                font-family: "Jua", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+        }
+
+        * {
+            margin : 0 ;
+            padding : 0 ;
+        }
+        .wrapper {
+                     width: 1200px ;
+                     margin: 0 auto ;
+        }
+        main {
+                background-size : 100% 100% ;
+                height: 800px ;
+                padding-bottom : 30px ;
+                margin-bottom : 100px;
+        }
+        header {
+                padding : 50px 0 ;
+                display: flex ;
+                justify-content: space-between;
+                align-items: center;
+        }
+        .logo {
+                margin : 20px 0 ;
+                margin-left: 80px ;
+                
+        }
+        nav ul {
+                width: max-content ;
+        }
+        nav li {
+                display: inline-block ;
+                margin : 0 30px ;
+        }
+        nav li a {
+                color : black ;
+                text-decoration: none ;
+                font-size: 25px ;
+        }
+        .ct1 {
+                color: orange ;
+                text-align: center ;
+                margin-bottom : 50px ;
+                font-size: 50px;
+        }
+        .c1 {
+                display: flex ;
+                justify-content: space-between ;
+                width: 225px ;
+                height: 294px ;
+                margin-bottom: 100px;
+                margin-left: 250px ;
+        }
+        .banner {
+                display: flex ;
+        }        
+
+        .c3 {
+                background-color: beige ;
+                width: 50% ;
+                height: 700px;
+                
+                
+        }
+        .c2 {
+                background-color: aqua ;
+                width: 500px ;
+                height: 500px ;
+        }
+        .c4 {
+                color : orange ;
+                font-size: 50px ;
+                text-align: end ;
+                margin-right: 270px ;
+                padding : 30px 0 ;
+        }
+        .c3 img {
+                margin-left: 280px ;
+                
+        }
+        .c5 {   
+                text-align: center ;
+                margin-right: 50px ;
+                padding : 50px 0 ;
+                font-size : 20px ;
+                margin-bottom: 100px ;
+        }
+        section {
+                background: url(img/event.jpg) no-repeat ;
+                background-size : 100% 100% ;
+                height: 700px;
+                margin-bottom: 100px ;
+                margin-top: 100px ;
+        }
+        .section2 {
+                    background-color: rgb(255, 255, 236) ;                   
+                    padding : 60px 0 ;
+                    margin : auto ;
+                    display : flex ;
+                    justify-content : space-between ;
+        }
+        .ct3 {
+                color: orange ;
+                text-align: center ;
+                font-size: 50px ;
+                margin-bottom: 50px ;
+        }
+        .section2 img {
+                        margin : 0 130px ;
+                        width: 350px ;
+                        height: 350px ;
+
+        }
+        footer {
+                
+                height: 150px;
+                background-color: rgb(243, 243, 208) ;
+                
+        }
+        .foot {
+                display: flex ;
+              
+                padding : 0 50px ;
+                align-items: center ;
+        }
+        .logo2 {
+                margin-left: 100px ;
+        }
+        .ct4 {
+                font-size: 15px ;
+                margin-left: 50px ;
+                padding :10px 0 ;
+        }
+        @media (max-width : 768px) {
+            .wrapper {
+                    width: 96%;
+                    margin : auto ;
+            }
+        header, .section2, .banner {
+                  /* 가로배치를 세로 열로 변환 */
+                    flex-direction : column ;
+                    flex-wrap : wrap ;
+                    margin : 1.5% ;
+                    gap : 0, 6rem ;
+                }
+        main {
+                height: 600px ;
+        }
+          .c1 img{
+                    width : 20% ;
+          }
+          .ct2 {
+                width: 90% ;
+                margin : auto ;
+          }
+          .c3 {
+                width: 90% ;
+                margin : auto ;
+          }  
+          .c3 img {
+                width :90% ;
+                margin : auto ;
+          }
+        .c1 {
+                        font-size : 0.9rem ;
+                        width : 90% ;
+                        margin : auto ;
+                }
+        .c1 img {
+                height: 200px ;
+        }
+       .c4 {
+            width: 90% ;
+            margin : auto ;
+       }
+        .c5 {
+                width: 98% ;
+                margin : auto ;
+        }
+        .c5 img {
+                width: 60% ;
+                margin : auto ;
+        }
+        .ct2 iframe {
+                width: 98% ;
+                margin : auto ;
+        }
+        footer {
+            width: 96%;
+            margin : auto ;
+            height: 90% ;
+        }
+        .foot {
+                width: 96% ;
+                margin : auto ;
+            }
+        .logo2 {
+            width: 60%;
+            margin : auto ;
+        }
+        .ct4 {
+            width: 50%;
+            margin : auto ;
+        }
+        nav li {
+            margin : 0 5px ;
+        }
+        .jua-regular a {
+            font-size : 0.8rem ;
+        }
+        section {
+                height: 300px;
+                margin : auto ;
+        }
+    }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/main2.jpg"></div>
+                    <div class="swiper-slide"><img src="img/main3.jpg"></div>
+                    <div class="swiper-slide"><img src="img/main.jpg"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+        <header>
+            <div class="logo">
+                <img src="img/logo.png" width="200">
+            </div>
+            <nav class="wrapper">
+                <ul class="jua-regular">
+                    <li><a href="#"> DUNKIN' OF MONTH </a></li>
+                    <li><a href="#"> BARND </a></li>
+                    <li><a href="#"> MENU </a></li>
+                    <li><a href="#"> EVENT </a></li>
+                    <li><a href="#"> STORE </a></li>
+                    <li><a href="#"> OREDER </a></li>
+                    <li><a href="#"> 창업문의 </a></li>
+                </ul>
+            </nav>
+        </header>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+
+    </script>
+    <menu>
+        <h1 class="ct1 jua-regular">DUNKIN'MENU</h1>
+        <div class="c1 wrapper">
+            <img src="img/donut.png">
+            <img src="img/food.png">
+            <img src="img/coffee.png">
+            <img src="img/beverage.png">
+            <img src="img/snak more.png">
+        </div>
+    </menu>
+    <div class="banner">
+        <div class="ct2">
+                <iframe width="1000" height="700" src="https://www.youtube.com/embed/WC-Q9_1VyLc?si=LQSyEaILFnyItBFu" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="c3">
+            <h1 class="c4 jua-regular">WHAT'S NEW?</h1>
+            <img src="img/m1.png" width="300" height="300">
+            <p class="c5">Melting corn butter Filled<br>
+                멜팅 콘버터 필드<br>
+                옥수수에 버터를 사르르 녹여 만든 콘버터<br>
+                필링을 채우고 옥수수 슈가파우더를 타핑한<br>
+                여름 제철 도넛</p>
+        </div>
+    </div>
+    <section>
+    </section>
+    <h1 class="ct3 jua-regular">WITH DUNKIN'</h1>
+    <div class="section2">
+       <div class="c5"><img src="img/order.png" ></div>
+       <div class="c5"><img src="img/store.png"></div>
+       <div class="c5"><img src="img/brand.png"></div>
+    </div>
+    <footer>
+        <div class="foot wrapper">
+        <div class="logo2">
+            <img src="img/logo.png" width="200">
+        </div>
+        <div class="ct4">
+            <p> 서울 특별시 서초구 남부순환로 2620(양재동 11-149번지) </p>
+            <p> 사업자 등록번호 : 303-81-09535 </p>
+            <p> 비알코리아 (주) 대표이사 도 세 호 </p>
+            <p> TEL : 080-555-3131 </p>
+            <p> 개인정보관리 책임자 : 심 수 연 </p>
+            <p> COPYRIGHT &copy; 2024 BRKOREA COMPANY. ALL RIGHTS RESERVED. </p>
+        </div>
+    </div>
+    </footer>
+</body>
+</html>
