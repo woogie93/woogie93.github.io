@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<meta charset="utf-8">
+
+<head>
+    <title>DASHU</title>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <script type="text/javascript" src="slick/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="./slick/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.slider').slick({
+                centerMode: true,
+                centerPadding: '400px',
+                slidesToShow: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                responsive: [{
+                        breakpoint: 768,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            centerPadding: '40px',
+                            slidesToShow: 1
+                        }
+                    },
+                    {
+                        breakpoint: 80,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            centerPadding: '40px',
+                            slidesToShow: 1
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+    <style>
+        .slick-prev {
+            width: 39px;
+            height: 77px;
+            background-image: url(./Previous.png);
+            background-repeat: no-repeat;
+            opacity: 10%;
+        }
+
+        .slick-next {
+            background-image: url(./Next.png);
+            width: 39px;
+            height: 77px;
+            background-repeat: no-repeat;
+            opacity: 10%;
+        }
+
+        .slider img {
+            max-width: 1000px;
+            margin: 0 auto;
+            box-shadow: 0px 30px 20px -35px #262626;
+            ;
+            height: auto;
+        }
+
+        .slider {
+            width: 1903px;
+            height: 600px;
+            transform: translateY(80px);
+            margin: 0px auto;
+        }
+
+        .slider .slick-slide {
+            margin: 10px;
+        }
+
+        .slick-prev:before,
+        .slick-next:before {
+            color: white;
+        }
+
+        .main {
+            height: 680px;
+            background-color: #262626;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="slider">
+            <div><img src="./dashu-img06.png" alt=""></div>
+            <div><img src="./dashu-img07.jpg" alt=""></div>
+            <div><img src="./dashu-img08.png" alt=""></div>
+        </div>
+    </div>
+</body>
+
+</html>

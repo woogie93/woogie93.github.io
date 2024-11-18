@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>Document</title>
+    <style>
+    .wrapper {
+            width: 1920px;
+            margin: 0 auto;
+        }
+        .wrapper2 {
+                width: 1400px ;
+                margin: 0 auto ;
+        }
+        * {
+                margin : 0 ;
+                padding : 0 ;
+                box-sizing : border-box ;
+        }
+        header {
+                display : flex ;
+                justify-content : space-between ;
+                padding : 30px ;
+                align-items: center ;
+        }
+        .top {
+                display: flex ;
+                justify-content: flex-end ;
+        }
+        span {
+                margin : 0 5px ;
+        }
+        .logo {
+                width: 200px ;
+                
+        }
+        .logo img {
+                margin-left : 820px ;
+        }
+        .ct1 {
+                text-align: center ;
+                height: 850px ;
+                
+        }
+        
+        .ct1 ul {
+                display: flex ;
+                justify-content : space-between ;
+                border : 2px solid black ;
+                border-top-left-radius : 1em ;
+                border-bottom-left-radius : 1em ;
+                border-top-right-radius : 1em ;
+                border-bottom-right-radius : 1em ;
+                width : 700px ;
+                padding : 1px ;
+                font-size : 20px ;
+                margin-top : 50px ;
+                margin-left: 31% ;
+                height: 50px;
+        }
+        .ct1 ul li {
+                margin : 0 auto;
+                list-style : none ;
+                
+                
+        }
+        .ct1 ul li a {
+                color : black ;
+                text-decoration: none ;
+                display: flex ;
+                margin-top : 5px ;
+                
+        }
+        li a img {
+                margin : 0 10px ;
+        }
+        .c1 {
+                width: 1400px ;
+                height: 500px ;
+                margin-top : 50px ;
+                margin-left : 15% ;
+        }
+        .c1 img {
+                border-top-left-radius : 1em ;
+                border-bottom-left-radius : 1em ;
+                border-top-right-radius : 1em ;
+                border-bottom-right-radius : 1em ;
+                background-size : 100% 100% ;
+        }
+        main {
+                height: 800px ;
+                margin-bottom: 50px ;
+                background : url(00.png) no-repeat ;
+                background-size : 100% 100% ;
+                
+        }
+        section {
+                height: 350px ;
+        }
+        .c2 {
+                display: flex ;
+                justify-content: space-between ;
+                margin-top : 50px ;
+                margin : 0 10px ;
+                font-size : 18px ;
+                color : black ;
+                padding : 30px ;
+        }
+        .c2 a {
+                text-decoration: none ;
+        }
+        .c2 p {
+                padding : 10px ;
+                margin-left : 10px ;
+                color : black ;
+                font-weight: bold ;
+        }
+        .c2-2 {
+                width: 200px ;
+                height: 100px ;
+        }
+        .c2-3 {
+                width: 200px ;
+                height: 100px ;
+        }
+        .c2-4 {
+                width: 200px ;
+                height: 100px ;
+        }
+        .c2-5 {
+                width: 200px ;
+                height: 100px ;
+        }
+        .c2-6 {
+                width: 200px ;
+                height: 100px ;
+        }
+        th, td {
+                border : 2px solid black ;
+        }
+        .ct2 h1 {
+                font-size : 40px ;
+        }
+        .c2-7 p {
+                color : darkgray ;
+                font-size : 20px ;
+                font-weight: bold;
+        }
+        .ct3 {
+                display: flex ;
+                justify-content: space-between ;
+                margin-bottom: 100px ;
+                
+        }
+        table {
+                border-collapse : collapse ;
+                width : 800px ;
+        }
+        table td {
+                border-left: 0;
+                border-right: 0;
+                border-top : 0 ; 
+        }
+        .c3 {
+                width: 550px ;
+                height: 300px ;
+                background : url(c.jpg) no-repeat center ;
+                background-size : 100% 100% ;
+                transition : all .4s ease-in-out ;
+                border-top-left-radius : 1em ;
+                border-bottom-left-radius : 1em ;
+                border-top-right-radius : 1em ;
+                border-bottom-right-radius : 1em ;
+        }
+        .c3:hover {
+                background-size : 110% 110% ;
+                
+        }
+        .c3-3 {
+                margin-top : 40px ;
+                padding : 0 10px ;
+        }
+        .ff{
+            height: 250px;
+            background: url(foot.png);
+            z-index: -100;
+            background-repeat: no-repeat;
+        }
+        .ft{
+            width: 500px;
+            height: auto;
+            color: white ;
+            padding-top: 50px;
+            margin-left: 500px;
+        }
+        .ft2{
+            width: 1000px ;
+            height: auto;
+            color: white ;
+            margin-top: 40px;
+            margin-left: 500px;
+            line-height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+                <a href="index.html"><img src="d.png" width="100%" height="100%"></a>
+            </div>
+        <div class="top">
+            <span> 로그인 </span>
+            <span> 회원가입 </span>
+        </div>
+    </header>
+    <main>
+        <div class="ct1">
+            <h1> 대구 바로예약 서비스 </h1>
+            <ul>
+                <li><a href="#"><img src="3.png" width="30" height="30">지역선택</a></li>
+                <li><a href="#"><img src="2.png" width="30" height="30">분류선택</a></li>
+                <li><a href="#"><img src="1.png" width="30" height="30">서비스</a></li>
+            </ul>
+            <div class="c1">
+                <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                                <img src="a.png" width="100%" height="100%">
+                          </div>
+                          <div class="swiper-slide" width="100%" height="100%">
+                                <img src="b.png">
+                          </div>
+                          <div class="swiper-slide" width="100%" height="100%">
+                                <img src="w.png">
+                          </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                      </div>
+                    
+                      <!-- Swiper JS -->
+                      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+                    
+                      <!-- Initialize Swiper -->
+                      <script>
+                        var swiper = new Swiper(".mySwiper", {
+                          navigation: {
+                            nextEl: ".swiper-button-next",
+                            prevEl: ".swiper-button-prev",
+                          },
+                        });
+                      </script>
+            </div>
+        </div>
+    </main>
+    <section>
+        <div class="banner wrapper2">
+        <div class="ct2">
+        <div class="c2-7">
+            <h1> 자주찾는 서비스</h1>
+            <p> 대구시민들이 많이 찾는 메뉴를<br>
+                한곳에 모았어요 </p>
+        </div>
+        <div class="c2">
+            <div class="c2-2">
+                <a href="#"><img src="i.png" width="150" height="100">
+                <p> 시설별 이용안내</p></a>
+            </div>
+            <div class="c2-3">
+                <a href="#"><img src="K.png" width="150" height="100">
+                <p> 나의 예약내역 </p></a>
+            </div>
+            <div class="c2-4">
+                <a href="#"><img src="r.png" width="150" height="100">
+                <p> 전화번호 안내 </p></a>
+            </div>
+            <div class="c2-5">
+                <a href="#"><img src="o.png" width="150" height="100">
+                <p> 공연 - 전시내역 </p></a>
+            </div>
+            <div class="c2-6">
+                <a href="#"><img src="f.png" width="150" height="100">
+                <p> 자주묻는질문 </p></a>
+            </div>
+        </div>
+        </div>
+</div>
+    </section>
+    <div class="tt wrapper2">
+    <div class="ct3">
+        <table>
+        <tr>
+        <td><h1>공지사항</h1></td><td>알립니다</td><td>행사소식</td><td>자주묻는질문</td>
+        </tr>
+        <tr>
+        <td>[동부여성문화회관]2024년 11월 수영장 회원 모집 공고</td><td></td><td></td><td>2024-10-21</td>
+        </tr>
+        <tr>
+        <td>[종합복지회관]2024년 하반기 종합복지회관 교육생 모집</td><td></td><td></td><td>2024-08-05</td>
+        </tr>
+        <tr>
+        <td>[동부여성문화회관]2024년 제3기 교육생 모집</td><td></td><td></td><td>2024-07-17</td>
+        </tr>
+        <tr>
+        <td>통합예약시스템 일시 중단 안내 2024. 10. 24.(목) 18:00~20:00</td><td></td><td></td><td>2024-10-24</td>
+        </tr>
+        </table>
+        <div class="c3-3">
+        <div class="c3-2">
+                <p><h1>알림존</h1></p>
+        </div>
+        <div class="c3">
+        </div>
+        </div>
+    </div>
+</div>
+    <footer>
+        <div class="ff wrapper">
+            <div class="foot">
+                <p class="ft">
+                    개인정보처리방침&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;이용약관&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;저작권정책
+                </p>
+                <p class="ft2">
+                    동인청사 : (우 41911) 대구광역시 중구 공평로 88 <br>
+                    산격청사 : (우 41542)대구광역시 북구 연암로 40 /전화번호 : 053&#41;120, 053&#41;803-0114 <br>
+                    &copy; DAEGU METROPOLITAN CITY ALL RIGHTS RESERVED.
+                </p>
+            </div>
+        </div>    
+    </footer>
+</body>
+</html>
