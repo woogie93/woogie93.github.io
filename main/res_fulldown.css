@@ -1,0 +1,239 @@
+  * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: #333;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .clearfix::before,
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        #header {
+            width: 100%;
+            height: 95px;
+            /* gnbBg의 기준점 */
+            position: relative;
+            border-bottom: 1px solid #193a6f;
+        }
+
+        .container {
+            width: 1280px;
+            height: inherit;
+            margin: 0 auto;
+            /* background-color: rgba(0,0,0,0.1);   */
+
+        }
+
+        .row {
+            padding: 0 28px;
+        }
+
+        /* media */
+
+        /* pc 네비게이션 */
+        @media(min-width:960px) {
+            .header {}
+
+            .header .logo {
+                /* 쌤이 맞춰놓은 사이즈 */
+                width: 184px;
+                height: 95px;
+                /* background-color: #ccc; */
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                float: left;
+            }
+
+            .header .gnb {
+                float: right;
+            }
+
+            .header .gnb>ul {}
+
+            .header .gnb>ul>li {
+                width: 136px;
+                padding: 35px 0;
+                float: left;
+                /* 가상요소 기준점 */
+                position: relative;
+            }
+
+            /* li 가상요소 */
+            .header .gnb>ul>li::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 3px;
+                background-color: #193a6f;
+                /* 마우스 오버 시 파란 줄 나오게하기 */
+                transform: scaleX(0);
+                transition: all 0.3s;
+            }
+
+            .header .gnb>ul>li:hover::after {
+                /* 마우스 오버 시 파란 줄 나오게하기 */
+                transform: scaleX(100%);
+            }
+
+            .header .gnb>ul>li>a {
+                display: block;
+                font-size: 18px;
+                font-weight: bold;
+                text-align: center;
+            }
+
+            .header .gnb>ul>li>.submenu {
+                position: absolute;
+                left: 0;
+                top: 95px;
+                /* background-color: #ccc; */
+                width: 100%;
+                z-index: 10;
+                display: none;
+            }
+
+            .header .gnb>ul>li>.submenu>li {}
+
+            .header .gnb>ul>li>.submenu>li>a {
+                display: block;
+                font-size: 16px;
+                font-weight: 500;
+                text-align: center;
+                padding: 20px 0;
+            }
+
+            #gnbBg {
+                width: 100%;
+                height: 192px;
+                background-color: #f5f5f5;
+                position: absolute;
+                left: 0;
+                top: 95px;
+                z-index: 9;
+                display: none;
+            }
+
+        }
+
+        @media(max-width:1300px) {
+            .container {
+                width: 100%;
+            }
+        }
+
+        @media(max-width:1024px) {}
+
+        /* 모바일 네비게이션 */
+        @media(max-width:960px) {
+            .row {
+                padding: 0 20px;
+            }
+
+            .header {}
+
+            .header .logo {
+                width: 100%;
+                height: 95px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .header .gnb {
+                /* container에 기준점 미리 잡아놓음 */
+                position: absolute;
+                left: -300px;
+                width: 250px;
+                height: calc(100vh - 95px);
+                background-color: #fff;
+                transition: 0.5s;
+            }
+
+            .header .gnb.open {
+                left: 0;
+            }
+
+            .header>.gnb>ul {
+                border-top: 0px solid #dbdbdb;
+                border-bottom: 0px solid #dbdbdb;
+            }
+
+            .header>.gnb>ul>li {
+                width: 100%;
+                border-top: 0px solid #dbdbdb;
+                border-bottom: 0px solid #dbdbdb;
+            }
+
+            .header>.gnb>ul>li>a {
+                display: block;
+                font-size: 16px;
+                font-weight: bold;
+                padding: 15px 30px;
+            }
+
+            .header>.gnb>ul>li>.submenu {
+                display: none;
+                height: auto;
+            }
+
+            .header>.gnb>ul>li>.submenu>li {
+                border-top: 0px solid #dbdbdb;
+
+            }
+
+            .header>.gnb>ul>li>.submenu>li>a {
+                display: block;
+                font-size: 14px;
+                padding: 10px 60px;
+            }
+
+            #barMenu {
+                width: 40px;
+                height: 25px;
+                /* background-color: #ccc; */
+                /* container에 이미 realative 기준점 있음*/
+                position: absolute;
+                top: 30px;
+                left: 20px;
+                cursor: pointer;
+            }
+
+            #barMenu .bar {
+                width: 40px;
+                height: 4px;
+                background-color: #1d1d1f;
+                /* bar::before, after 기준점 */
+                position: relative;
+            }
+
+            #barMenu .bar::before,
+            #barMenu .bar::after {
+                content: "";
+                position: absolute;
+                width: 40px;
+                height: 4px;
+                background-color: #1d1d1f;
+                left: 0;
+                top: 10px;
+            }
+
+            #barMenu .bar::after {
+                top: 20px;
+            }
+        }
